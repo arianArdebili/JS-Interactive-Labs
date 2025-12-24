@@ -1,0 +1,59 @@
+body {
+    background-color: #1a1f26; /* Dark Theme */
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Aligns them vertically in the center */
+    gap: 20px; /* Space between the button and text */
+}
+
+/* THE BUTTON STYLING */
+.reveal-btn {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 40px 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none; /* Prevents highlighting text when clicking fast */
+}
+
+.reveal-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* THE CONTENT BOX STYLING */
+.hidden-content {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* THE MAGIC CLASS */
+/* When an element has this class, it disappears */
+.hidden {
+    display: none;
+}
